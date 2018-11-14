@@ -31,7 +31,14 @@ gem install danger-suggester
 
 ## Usage
 
-Run Danger in a Git repository after changing your code (e.g. `rubocop --auto-correct`).
+Add this line to your application's Dangerfile:
+
+```ruby
+# Dangerfile
+suggester.suggest
+```
+
+And then execute `danger` after changing your code by any linter tools (e.g. `rubocop --auto-correct`).
 
 ## Contributing
 
