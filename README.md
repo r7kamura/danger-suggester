@@ -4,7 +4,7 @@
 [![Gem Version](https://badge.fury.io/rb/danger-suggester.svg)](https://rubygems.org/gems/danger-suggester)
 [![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/github/r7kamura/danger-suggester)
 
-A Danger plug-in to suggest code changes through inline comments in pull requests.
+A [Danger](https://github.com/danger/danger) plug-in to suggest code changes through inline comments in pull requests.
 
 Suggestions are calculated based on the results of `git diff`, so any code formatter like rubocop, prettier, go fmt, etc. can be used for this.
 Note that there is a limitation that multi-line replacements cannot be suggested because GitHub's suggested changes™ doesn't support it.
