@@ -5,6 +5,10 @@
 
 A Danger plug-in to suggest code changes through inline comments in pull requests.
 
+## Requirements
+
+- Ruby 2.3 or higher
+
 ## Installation
 
 Add this line to your application's Gemfile:
