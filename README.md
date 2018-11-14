@@ -6,6 +6,12 @@
 
 A Danger plug-in to suggest code changes through inline comments in pull requests.
 
+Suggestions are calculated based on on the results of `git diff`,
+so any code formatter can be used (e.g. rubocop, prettier, go fmt).
+
+NOTE: This plug-in doesn't suggest multi-line change,
+because GitHub's suggested changes™ doesn't support it,
+
 ## Requirements
 
 - Ruby 2.2 or higher
@@ -38,7 +44,9 @@ Add this line to your application's Dangerfile:
 suggester.suggest
 ```
 
-And then execute `danger` after correcting code by some linter tools (e.g. `rubocop --auto-correct`).
+And then execute `danger` after correcting code by your favorite code formatters.
+
+See [.circleci/config.yml](/.circleci/config.yml) for more detailed example.
 
 ## Contributing
 
