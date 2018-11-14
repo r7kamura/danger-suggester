@@ -1,1 +1,1 @@
-suggester.lint
+suggester.suggest

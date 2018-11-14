@@ -5,7 +5,7 @@ require 'git_diff'
 
 module Danger
   class DangerSuggester < ::Danger::Plugin
-    def lint
+    def suggest
       suggestions_for_added_lines.each do |suggestion|
         markdown(
           suggestion.message,
