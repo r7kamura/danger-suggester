@@ -1,6 +1,7 @@
 # Danger::Suggestion
 
 [![CircleCI](https://circleci.com/gh/r7kamura/danger-suggestion.svg?style=svg)](https://circleci.com/gh/r7kamura/workflows/danger-suggestion)
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/github/r7kamura/danger-suggestion)
 
 A Danger plug-in to suggest code changes through inline comments in pull requests.
 
