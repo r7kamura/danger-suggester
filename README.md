@@ -7,7 +7,7 @@
 A Danger plug-in to suggest code changes through inline comments in pull requests.
 
 Suggestions are calculated based on the results of `git diff`, so any code formatter like rubocop, prettier, go fmt, etc. can be used for this.
-Note that this plug-in doesn't suggest multi-line change, because GitHub's suggested changes™ doesn't support it.
+Note that there is a limitation that multi-line replacements cannot be suggested because GitHub's suggested changes™ doesn't support it.
 
 ## Requirements
 
