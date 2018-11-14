@@ -10,8 +10,12 @@ jobs:
           command: bundle install
           name: bundle install
       - run:
+          command: bundle exec rubocop --auto-correct
+          name: rubocop
+      - run:
           command: bundle exec danger
           name: danger
+          when: always
   rspec:
     machine: true
     steps:
