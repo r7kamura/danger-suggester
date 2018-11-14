@@ -7,9 +7,11 @@ module Danger
       # @param [String]
       attr_reader :path
 
+      # @param [String] content
       # @param [Integer] line
       # @param [String] path
-      def initialize(line:, path:)
+      def initialize(content:, line:, path:)
+        @content = content
         @line = line
         @path = path
       end
@@ -18,17 +20,9 @@ module Danger
       def message
         <<~STRING
           ```suggestion
-          #{code_after_change}
+          #{@content}
           ```
         STRING
-      end
-
-      private
-
-      # @todo
-      # @return [String]
-      def code_after_change
-        'dummy'
       end
     end
   end
