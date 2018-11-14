@@ -1,5 +1,7 @@
 # Danger::Suggestion
 
+[![CircleCI](https://circleci.com/gh/r7kamura/danger-suggestion.svg?style=svg)](https://circleci.com/gh/r7kamura/workflows/danger-suggestion)
+
 A Danger plug-in to suggest code changes through inline comments in pull requests.
 
 ## Installation
