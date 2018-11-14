@@ -1,6 +1,7 @@
 # Danger::Suggester
 
 [![CircleCI](https://circleci.com/gh/r7kamura/danger-suggester.svg?style=svg)](https://circleci.com/gh/r7kamura/workflows/danger-suggester)
+[![Gem Version](https://badge.fury.io/rb/danger-suggester.svg)](https://rubygems.org/gems/danger-suggester)
 [![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/github/r7kamura/danger-suggester)
 
 A Danger plug-in to suggest code changes through inline comments in pull requests.
