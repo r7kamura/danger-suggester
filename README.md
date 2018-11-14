@@ -9,6 +9,8 @@ A [Danger](https://github.com/danger/danger) plug-in to suggest code changes thr
 Suggestions are calculated based on the results of `git diff`, so any code formatter like rubocop, prettier, go fmt, etc. can be used for this.
 Note that there is a limitation that multi-line replacements cannot be suggested because GitHub's suggested changes™ doesn't support it.
 
+![demo](/images/demo.png)
+
 ## Requirements
 
 - Ruby 2.2 or higher
