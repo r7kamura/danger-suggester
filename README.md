@@ -34,7 +34,6 @@ gem install danger-suggester
 Add this line to your application's Dangerfile:
 
 ```ruby
-# Dangerfile
 suggester.suggest
 ```
 
