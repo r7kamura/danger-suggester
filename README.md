@@ -37,7 +37,7 @@ Add this line to your application's Dangerfile:
 suggester.suggest
 ```
 
-And then execute `danger` after changing your code by any linter tools (e.g. `rubocop --auto-correct`).
+And then execute `danger` after correcting code by some linter tools (e.g. `rubocop --auto-correct`).
 
 ## Contributing
 
