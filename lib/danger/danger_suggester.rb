@@ -4,11 +4,11 @@ require 'danger/suggester/suggestion'
 module Danger
   class DangerSuggester < ::Danger::Plugin
     def lint
-      suggestions.each do |suggester|
+      suggestions.each do |suggestion|
         markdown(
-          suggester.message,
-          file: suggester.path,
-          line: suggester.line,
+          suggestion.message,
+          file: suggestion.path,
+          line: suggestion.line,
         )
       end
     end
