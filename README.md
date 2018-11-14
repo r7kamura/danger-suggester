@@ -7,7 +7,7 @@ A Danger plug-in to suggest code changes through inline comments in pull request
 
 ## Requirements
 
-- Ruby 2.3 or higher
+- Ruby 2.2 or higher
 
 ## Installation
 

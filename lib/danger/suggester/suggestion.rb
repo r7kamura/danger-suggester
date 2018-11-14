@@ -18,11 +18,7 @@ module Danger
 
       # @return [String]
       def message
-        <<~STRING
-          ```suggestion
-          #{@content}
-          ```
-        STRING
+        "```suggestion\n#{@content}\n```"
       end
     end
   end
