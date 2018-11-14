@@ -1,0 +1,34 @@
+jobs:
+  danger:
+    machine: true
+    steps:
+      - checkout
+      - run:
+          command: gem install bundler -v 1.17.1
+          name: gem install bundler -v 1.17.1
+      - run:
+          command: bundle install
+          name: bundle install
+      - run:
+          command: bundle exec danger
+          name: danger
+  rspec:
+    machine: true
+    steps:
+      - checkout
+      - run:
+          command: gem install bundler -v 1.17.1
+          name: gem install bundler -v 1.17.1
+      - run:
+          command: bundle install
+          name: bundle install
+      - run:
+          command: bundle exec rspec
+          name: rspec
+version: 2
+workflows:
+  version: 2
+  test:
+    jobs:
+      - danger
+      - rspec
