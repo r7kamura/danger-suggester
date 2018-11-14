@@ -3,6 +3,7 @@ PATH
   specs:
     danger-suggester (0.1.0)
       danger
+      git_diff
 
 GEM
   remote: https://rubygems.org/
@@ -87,7 +88,6 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.17)
   danger-suggester!
-  git_diff
   rake (~> 10.0)
   rspec (~> 3.0)
   rubocop
