@@ -20,10 +20,10 @@ module Danger
     # @return [Hash{String => Array<Integer>}]
     def added_lines_in_commits
       @added_lines_in_commits ||= begin
-        hash = ::Hash.new do |hash, key|
+        origin = ::Hash.new do |hash, key|
           hash[key] = []
         end
-        ::GitDiff.from_string(diff_string_from_commits).files.each_with_object(hash) do |file, result|
+        ::GitDiff.from_string(diff_string_from_commits).files.each_with_object(origin) do |file, result|
           result[file.b_path] = file.hunks.flat_map do |hunk|
             hunk.lines.grep(::GitDiff::Line::Addition).map do |line|
               line.line_number.right
