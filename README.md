@@ -45,7 +45,8 @@ suggester.suggest
 
 And then execute `danger` after correcting code by your favorite code formatters.
 
-See [.circleci/config.yml](/.circleci/config.yml) for more detailed example.
+- See [.circleci/config.yml](/.circleci/config.yml) for more detailed example.
+- See https://github.com/danger/danger if you are new to Danger.
 
 ## Contributing
 
