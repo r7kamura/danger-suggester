@@ -10,7 +10,7 @@ module Danger
         markdown(
           suggestion.message,
           file: suggestion.path,
-          line: suggestion.line,
+          line: suggestion.line
         )
       end
     end
@@ -64,7 +64,7 @@ module Danger
           ::Danger::Suggester::Suggestion.new(
             content: change.added_content,
             line: change.first_line_number,
-            path: file.a_path,
+            path: file.a_path
           )
         end
       end

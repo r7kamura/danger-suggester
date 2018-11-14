@@ -1,1 +1,1 @@
-require "danger/suggester/version"
+require 'danger/suggester/version'
