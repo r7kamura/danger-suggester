@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    danger-suggestion (0.1.0)
+    danger-suggester (0.1.0)
       danger
 
 GEM
@@ -69,7 +69,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.17)
-  danger-suggestion!
+  danger-suggester!
   rake (~> 10.0)
   rspec (~> 3.0)
 

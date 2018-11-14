@@ -1,7 +1,7 @@
-# Danger::Suggestion
+# Danger::Suggester
 
-[![CircleCI](https://circleci.com/gh/r7kamura/danger-suggestion.svg?style=svg)](https://circleci.com/gh/r7kamura/workflows/danger-suggestion)
-[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/github/r7kamura/danger-suggestion)
+[![CircleCI](https://circleci.com/gh/r7kamura/danger-suggester.svg?style=svg)](https://circleci.com/gh/r7kamura/workflows/danger-suggester)
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/github/r7kamura/danger-suggester)
 
 A Danger plug-in to suggest code changes through inline comments in pull requests.
 
@@ -14,7 +14,7 @@ A Danger plug-in to suggest code changes through inline comments in pull request
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'danger-suggestion'
+gem 'danger-suggester'
 ```
 
 And then execute:
@@ -26,7 +26,7 @@ bundle
 Or install it yourself as:
 
 ```
-gem install danger-suggestion
+gem install danger-suggester
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ Run Danger in a Git repository after changing your code (e.g. `rubocop --auto-co
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/r7kamura/danger-suggestion.
+Bug reports and pull requests are welcome on GitHub at https://github.com/r7kamura/danger-suggester.
 
 ## License
 

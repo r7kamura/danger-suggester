@@ -1,5 +1,5 @@
 module Danger
-  module Suggestion
+  module Suggester
     class Suggestion
       # @return [Integer]
       attr_reader :line

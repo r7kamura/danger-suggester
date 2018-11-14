@@ -1,15 +1,15 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'danger/suggestion/version'
+require 'danger/suggester/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'danger-suggestion'
-  spec.version       = Danger::Suggestion::VERSION
+  spec.name          = 'danger-suggester'
+  spec.version       = Danger::Suggester::VERSION
   spec.authors       = ['Ryo Nakamura']
   spec.email         = ['r7kamura@gmail.com']
 
   spec.summary       = 'A Danger plug-in to suggest code changes through inline comments in pull requests.'
-  spec.homepage      = 'https://github.com/r7kamura/danger-suggestion'
+  spec.homepage      = 'https://github.com/r7kamura/danger-suggester'
   spec.license       = 'MIT'
 
   # Specify which files should be added to the gem when it is released.

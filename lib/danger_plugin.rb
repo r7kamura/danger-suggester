@@ -1,1 +1,1 @@
-require 'danger/danger_suggestion'
+require 'danger/danger_suggester'
