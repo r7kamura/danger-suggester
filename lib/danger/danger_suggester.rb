@@ -4,7 +4,7 @@ require 'danger/suggester/suggestion'
 module Danger
   class DangerSuggester < ::Danger::Plugin
     def lint
-      suggesters.each do |suggester|
+      suggestions.each do |suggester|
         markdown(
           suggester.message,
           file: suggester.path,
@@ -16,8 +16,8 @@ module Danger
     private
 
     # @todo
-    # @return [Array<Danger::Suggester::Suggester>]
-    def suggesters
+    # @return [Array<Danger::Suggester::Suggestion>]
+    def suggestions
       [
         ::Danger::Suggester::Suggestion.new(
           line: 1,
