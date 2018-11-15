@@ -3,7 +3,7 @@ require 'git_diff'
 module Danger
   module Suggester
     class Change
-      # @param [Array<GitDiff::Line::Context>]
+      # @param [Array<GitDiff::Line::Context>] chunks
       def initialize(chunks)
         @chunks = chunks
       end
