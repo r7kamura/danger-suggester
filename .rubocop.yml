@@ -12,3 +12,6 @@ Metrics/PerceivedComplexity:
 
 Style/Documentation:
   Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
