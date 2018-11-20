@@ -10,17 +10,8 @@ jobs:
           command: bundle install
           name: bundle install
       - run:
-          command: DISABLE_DANGER_SUGGESTER=1 bundle exec danger
+          command: bundle exec danger
           name: danger
-          when: always
-      - run:
-          command: bundle exec rubocop --auto-correct
-          name: rubocop
-          when: always
-      - run:
-          command: DISABLE_DANGER_RUBOCOP=1 bundle exec danger
-          name: danger
-          when: always
   rspec:
     machine: true
     steps:
