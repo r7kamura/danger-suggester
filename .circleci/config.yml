@@ -10,12 +10,8 @@ jobs:
           command: bundle install
           name: bundle install
       - run:
-          command: bundle exec rubocop --auto-correct
-          name: rubocop
-      - run:
           command: bundle exec danger
           name: danger
-          when: always
   rspec:
     machine: true
     steps:
@@ -29,19 +25,6 @@ jobs:
       - run:
           command: bundle exec rspec
           name: rspec
-  rubocop:
-    machine: true
-    steps:
-      - checkout
-      - run:
-          command: gem install bundler -v 1.17.1
-          name: gem install bundler -v 1.17.1
-      - run:
-          command: bundle install
-          name: bundle install
-      - run:
-          command: bundle exec rubocop
-          name: rubocop
 version: 2
 workflows:
   version: 2
@@ -49,4 +32,3 @@ workflows:
     jobs:
       - danger
       - rspec
-      - rubocop

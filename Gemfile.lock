@@ -32,6 +32,9 @@ GEM
       no_proxy_fix
       octokit (~> 4.7)
       terminal-table (~> 1)
+    danger-rubocop (0.6.0)
+      danger
+      rubocop
     diff-lcs (1.3)
     faraday (0.15.3)
       multipart-post (>= 1.2, < 3)
@@ -92,11 +95,11 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.17)
+  danger-rubocop
   danger-suggester!
   pry
   rake (~> 10.0)
   rspec (~> 3.0)
-  rubocop
 
 BUNDLED WITH
    1.17.1
